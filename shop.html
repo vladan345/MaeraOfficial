@@ -1,116 +1,183 @@
 <!DOCTYPE html>
-<html lang="sr">
+<html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Vidaković - Prodavnica</title>
-        <link rel="stylesheet" href="css/stil.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MaerA - Official Site</title>
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-       <header>
-            <div class="container">
-                <div class="head-wrap">
-                    <a href="#"><img class="logo" src="img/Logo.png" alt="logo"></a>
-                    <nav>
-                        <ul>
-                            <li><a href="index.html">POČETNA</a></li>
-                            <li><a href="kontakt.html">KONTAKT</a></li>
-                            <li><a href="#">PRODAJA</a></li>
-                        </ul>
-                    </nav>
-                    <img id='menu' src='img/hamburger.png' alt='ham'>
-                </div>
-            </div>
-        </header>
-        
-        <div class='ham-nav'>
-            <a href="index.html">POČETNA</a>
-            <a href="kontakt.html">KONTAKT</a>
-            <a href="#">PRODAJA</a>
-        </div>
         
         
-        <img class='head-img' src='img/Prodavnica.jpg' alt='shop'>
-        
-    <section class="proizvodi">
-        <div class="container">
-            <div class="valute-wrap">
-                <div class="valute">
-                    <p>Izaberite željenu valutu</p>
-                    <div class="valuta">RSD</div>
-                    <div class="valuta">EUR</div>
-                    <div class="valuta">USD</div>
-                </div>
-            </div>
-            <div class="shop-row">
-                <div class="proizvod">
-                    <img src="img/SuncokretShop.jpg" alt="suncokret">
-                    <p class="proizvod-naziv">suncokretov med</p>
-                    <p class="cena">600,00 RSD</p>
-                    <a href="kontakt.html">naruči</a>
-                </div>
-                <div class="proizvod">
-                    <img src="img/CvetniShop.jpg" alt="suncokret">
-                    <p class="proizvod-naziv">cvetni med</p>
-                    <p class="cena">750,00 RSD</p>
-                    <a href="kontakt.html">naruči</a>
-                </div>
-            </div>
+        <div class="background">
             
-            <div class="shop-row">
-                <div class="proizvod">
-                    <img src="img/BagremShop.jpg" alt="suncokret">
-                    <p class="proizvod-naziv">bagremov med</p>
-                    <p class="cena">750,00 RSD</p>
-                    <a href="kontakt.html">naruči</a>
-                </div>
-                <div class="proizvod">
-                    <img src="img/LivadskiShop.jpg" alt="suncokret">
-                    <p class="proizvod-naziv">livadski med</p>
-                    <p class="cena">700,00 RSD</p>
-                    <a href="kontakt.html">naruči</a>
-                </div>
-            </div>
-            <div class="shop-row">
-                <div class="proizvod">
-                    <img src="img/Kesten.jpg" alt="suncokret">
-                    <p class="proizvod-naziv">kestenov med</p>
-                    <p class="cena">800,00 RSD</p>
-                    <a href="kontakt.html">naruči</a>
-                </div>
-                <div class="proizvod">
-                    <img src="img/Medovaca.jpg" alt="suncokret">
-                    <p class="proizvod-naziv">medovača</p>
-                    <p class="cena">1450,00 RSD</p>
-                    <a href="kontakt.html">naruči</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-        <section class="javite">
-            <div class="container">
-                <div class="shop-row">
-                    <div class="javite-slike">
-                        <img src="img/Kontakt.jpg" alt="prica1">
+            <!-- HEADER -->
+            
+            <header class="shop-bg">
+                <nav>
+                    <div class="container">
+                        <div class="nav-wrap">
+                            <a href="#"><img src="img/logo.png" alt="logo"></a>
+                            <div class="nav-cl">
+                                <ul>
+                                    <li><a href="index.html">home</a></li>
+                                    <li><a href="music.html">music</a></li>
+                                    <li><a href="about.html">about</a></li>
+                                    <li><a href="#">shop</a></li>
+                                </ul>
+                            </div>
+                            <div class="nav-sc">
+                                <ul>
+                                    <li><a href="https://www.facebook.com/maeraband/" target="_blank"><img src="img/social/fb.png" alt="fb"></a></li>
+                                    <li><a href="https://www.instagram.com/maera_official/?hl=en" target="_blank"><img src="img/social/ig.png" alt="ig"></a></li>
+                                    <li><a href="https://www.youtube.com/channel/UC8KdTJOwwdPZwhDor-vOphw" target="_blank"><img src="img/social/yt.png" alt="yt"></a></li>
+                                    <li><a href="https://twitter.com/maera_official" target="_blank"><img src="img/social/tw.png" alt="tw"></a></li>
+                                    <li><a href="https://soundcloud.com/maeraofficial" target="_blank"><img src="img/social/sc.png" alt="sc"></a></li>
+                                </ul>
+                                <img id="menu" src="img/menu.png" alt="ham">
+                            </div>
+                        </div>
                     </div>
-                    <div class="home-tekst">
-                        <h2 class="podnaslov">javite nam se</h2>
-                        <p class="paragraf">Imate sugestiju ili zamerku? Želite da sarađujete sa nama? Uvek smo dostupni i spremni za saradnju, kritiku i priču. Kontaktirajte nas brzo i efikasno jednim klikom!</p>
-                        <a class="dugme kontakt-btn" href="kontakt.html">kontakt</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+                </nav>
+            </header>
         
+ 
+            <section class="shop1"> 
+                <h2>t-shirts</h2>
+                <div class="buttons">
+                    <div class="color-button t-black">BLACK</div>
+                    <div class="color-button t-white">WHITE</div>
+                </div>
+                <div class="shop-wrap">
+                    <div class="artical">
+                        <img class="crne" src="img/shop-img/shirt.png" alt="1">
+                        <p>Maera the Hound BIG</p>
+                        <p>US $10,00</p>
+                        <div class="shop-button"><a href="#">buy now</a></div>
+                    </div>
+                    <div class="artical">
+                        <img class="crne" src="img/shop-img/shirt2.png" alt="2">
+                        <p>Maera the Hound SMALL</p>
+                        <p>US $9,00</p>
+                        <div class="shop-button"><a href="#">buy now</a></div>
+                    </div>
+                    <div class="artical">
+                        <img class="crne" src="img/shop-img/shirtL.png" alt="3">
+                        <p>Maera Logo</p>
+                        <p>US $8,00</p>
+                        <div class="shop-button"><a href="#">buy now</a></div>
+                    </div>
+                    <div class="artical last">
+                        <img class="crne" src="img/shop-img/shirtC.png" alt="4">
+                        <p>Purgatory Cover</p>
+                        <p>US $10,00</p>
+                        <div class="shop-button"><a href="#">buy now</a></div>
+                    </div>
+                </div>
+            </section>
+            <section class="shop2"> 
+                <h2>hoodies</h2>
+                <div class="buttons">
+                    <div class="color-button hoodie-black">BLACK</div>
+                    <div class="color-button hoodie-white">WHITE</div>
+                </div>
+                <div class="shop-wrap">
+                    <div class="artical">
+                        <img class="crni" src="img/shop-img/hoodie.png" alt="5">
+                        <p>Maera the Hound BIG</p>
+                        <p>US $14,00</p>
+                        <div class="shop-button"><a href="#">buy now</a></div>
+                    </div>
+                    <div class="artical">
+                        <img class="crni" src="img/shop-img/hoodie2.png" alt="6">
+                        <p>Maera the Hound SMALL</p>
+                        <p>US $12,00</p>
+                        <div class="shop-button"><a href="#">buy now</a></div>
+                    </div>
+                    <div class="artical">
+                        <img class="crni" src="img/shop-img/hoodieL.png" alt="7">
+                        <p>Maera Logo</p>
+                        <p>US $10,00</p>
+                        <div class="shop-button"><a href="#">buy now</a></div>
+                    </div>
+                    <div class="artical last">
+                        <img class="crni" src="img/shop-img/hoodieC.png" alt="8">
+                        <p>Purgatory Cover</p>
+                        <p>US $15,00</p>
+                        <div class="shop-button"><a href="#">buy now</a></div>
+                    </div>
+                </div>
+            </section>
+            <section class="shop3"> 
+                <h2>cds &amp; vinyls</h2>
+                <div class="shop-wrap third">
+                    <div class="artical">
+                        <img src="img/shop-img/purg%20ploca.png" alt="9">
+                        <p>Purgatory Album Vinyl</p>
+                        <p>US $30,00</p>
+                        <div class="shop-button"><a href="#">soon</a></div>
+                    </div>
+                    <div class="artical">
+                        <img src="img/shop-img/purg%20cd.png" alt="10">
+                        <p>Purgatory Album CD</p>
+                        <p>US $10,00 </p>
+                        <div class="shop-button"><a href="#">soon</a></div>
+                    </div>
+                    <div class="artical">
+                        <img src="img/shop-img/echo.png" alt="11">
+                        <p>Echo the Howl Album CD</p>
+                        <p>US $8,00</p>
+                        <div class="shop-button"><a href="#">buy now</a></div>
+                    </div>
+                    <div class="artical last">
+                        <img src="img/shop-img/ant.png" alt="12">
+                        <p>Antfarm EP CD</p>
+                        <p>US $5,00</p>
+                        <div class="shop-button"><a href="#">buy now</a></div>
+                    </div>
+                </div>
+            </section>
+            <section class="shop2"> 
+                <h2>misc.</h2>
+                <div class="shop-wrap fourth">
+                    <div class="artical">
+                        <img src="img/shop-img/pick.png" alt="9">
+                        <p>Guitar Pick 1.5mm</p>
+                        <p>US $4,00</p>
+                        <div class="shop-button"><a href="#">buy now</a></div>
+                    </div>
+                    <div class="artical">
+                        <img src="img/shop-img/pin.png" alt="10">
+                        <p>MaerA Logo Pin</p>
+                        <p>US $2,00 </p>
+                        <div class="shop-button"><a href="#">buy now</a></div>
+                    </div>
+                    <div class="artical">
+                        <img src="img/shop-img/stick.png" alt="11">
+                        <p>Drumsticks 5B</p>
+                        <p>US $9,00</p>
+                        <div class="shop-button"><a href="#">buy now</a></div>
+                    </div>
+                    <div class="artical last">
+                        <img src="img/shop-img/bottle.png" alt="12">
+                        <p>The Hound Bottle Opener</p>
+                        <p>US $10,00</p>
+                        <div class="shop-button"><a href="#">buy now</a></div>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+    
+     <!-- FOOTER -->
+    
         <footer>
-            <p>Copyright © 2019 Ilija Vidaković &amp; Vladan Marković</p>
-            <div class="social-img">
-                <a href="#"><img src="img/ikone/facebook.png" alt="fb"></a>
-                <a href="#"><img src="img/ikone/instagram.png" alt="ig"></a>
-                <a href="#"><img class="last-social" src="img/ikone/youtube.png" alt="yt"></a>
-            </div>
+            <p>&copy; 2019 MaerA - All Rights Reserved.</p>
+            <p class="credits">Website design: Vladan Markovic,
+            The Hound and "Echo the Howl" cover art: Mihailo Matovic, 
+            "Purgatory" cover art: Vukan Kuzman</p>    
         </footer>
-        <script type='text/javascript' src='js/Script.js'></script>
+        <script src="script/black.js"></script>
+        <script src="script/drop.js"></script>
     </body>
 </html>
