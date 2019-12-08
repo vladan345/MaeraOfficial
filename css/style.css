@@ -19,6 +19,12 @@ body {
     margin: 0 auto;
     padding: 0 50px;
 }
+.container-shop {
+    height: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
 .background {
     background-image: url('../img/tom.jpg');
     background-size: cover;
@@ -32,7 +38,7 @@ body {
 nav {
     width: 100%;
     height: 100px;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.9);
     position: fixed;
     z-index: 10000;
 }
@@ -86,7 +92,35 @@ nav {
     display: none;
     cursor: pointer;
 }
+.phone-nav {
+    transition: 0.5s;
+    text-align: center;
+    position: fixed;
+    top: 100px;
+    transform: translateX(-100%);
+    width: 200px;
+    height: 450px;
+    background-color: rgba(0, 0, 0, 0.9);
+}
 
+.phone-links a {
+    border-bottom: 2px solid #aaa;
+    text-decoration: none;
+    font-size: 200%;
+    text-transform: uppercase;
+    padding: 0 20px 30px 20px;
+    color: #fff;
+    display: block;
+    width: 150px;
+    margin: 30px auto;
+}
+.phone-nav .nav-sc ul {
+    width: 150px;
+    margin: 0 auto;
+}
+.phone-nav .nav-sc ul li a img {
+    width: 25px;
+}
 /*--------
  PODNASLOVI 
 ---------*/
@@ -221,11 +255,6 @@ header {
 
 .news {
     padding: 100px 0;
-}
-.news::after {
-    content:'';
-    display: block;
-    clear: both;
 }
 .news-part {
     display: flex;
@@ -476,7 +505,7 @@ header {
 }
 
 .band-wrap {
-    text-align: center;
+    width: 600px;
     margin: 0 auto;
 }
 .band-wrap p {
@@ -491,90 +520,67 @@ header {
     SHOP
 - - - - - - */
 
-.shop1 {
+.shop {
     width: 100%;
-    height: 800px;
-    background-color: rgba(0, 0, 0, 0.50);
-    margin-top: -4px;
-}
-.shop2 {
-    width: 100%;
-    height: 800px;
-    background-color: rgba(0, 0, 0, 0.50);
-}
-.shop3 {
-    width: 100%;
-    height: 750px;
     background-color: rgba(0, 0, 0, 0.50);
 }
 .buttons {
-    transform: translate(-50%, 0);
-    position: absolute;
-    left: 50%;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin: -20px auto 50px auto;
 }
 .color-button {
-    float: left;
     text-transform: uppercase;
-    display: block;
+    display: inline-block;
     text-decoration: none;
     color: #fff;
     text-align: center;
-    width: 200px;
-    margin: 0 auto;
-    font-size: 30px;
+    font-size: 300%;
     border: solid 2px #fff;
     border-radius: 300px;
-    padding: 15px 0 10px 0;
+    padding: 15px 20px 10px 20px;
     transition: 0.3s;
     cursor: pointer;
-    margin: 20px 30px 0 0;
-}
-.color-button:last-child {
-    margin-right: 0;
 }
 .color-button:hover {
     background-color: #aaa;
 }
-
+.shop-row {
+    padding-bottom: 20px;
+}
 .shop-wrap {
-    max-width: 1260px;
-    margin: 150px auto 100px auto;
-}
-.third {
-    margin: 50px auto 70px auto;
-}
-.fourth {
-    margin: 50px auto 70px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .artical {
     width: 280px;
-    float: left;
     text-align: center;
-    margin-right: 40px;
-}
-.last {
-    margin-right: 0;
 }
 .artical p {
     font-size: 250%;
     margin-bottom: 10px;
 }
-.shop-button a {
+.artical a {
+    background-color: rgba(170, 170, 170, 0);
     text-transform: uppercase;
-    display: block;
+    display: inline-block;
     text-decoration: none;
     color: #fff;
     text-align: center;
-    width: 200px;
-    margin: 0 auto;
-    font-size: 30px;
+    font-size: 300%;
     border: solid 2px #fff;
     border-radius: 300px;
-    padding: 15px 0 10px 0;
+    padding: 15px 20px 10px 20px;
     transition: 0.3s;
 }
-.shop-button a:hover {
-    background-color: #aaa;
+.artical a:hover {
+    background-color: rgba(170, 170, 170, 1);
+}
+.shop-button:hover {
+    cursor: default; 
+    background-color: rgba(170, 170, 170, 0);
 }
 /*--------------
      FOOTER
@@ -603,3 +609,17 @@ footer p {
 RESPONSIVE
 
 -----------*/
+
+@media only screen and (max-width: 1000px) {
+    
+    #menu {display: block;}
+    .nav-cl {display: none;}
+    .nav-cl {display: none;}
+    .nav-wrap .nav-sc {display: none;}
+    .index-head-text h1{font-size: 70px;}
+    .tour-dates ul li, .tour-tickets ul li {font-size: 20px;}
+    .tour-tickets {width: 230px;}
+    .latest-wrap img {width: 300px;}
+    h2 {font-size: 28px;}
+    h2:after {width: 230px;}
+}
