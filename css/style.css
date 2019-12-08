@@ -325,11 +325,12 @@ header {
 .music {
     height: 100vh;
     width: 100%;
+    position: relative;
 }
 
 .album {
-    width: 450px;
-    height: 450px;
+    width: 100%;
+    height: 100%;
     box-shadow: 15px 15px 10px 0px rgba(0,0,0,0.70);
     cursor: pointer;
     
@@ -618,6 +619,21 @@ RESPONSIVE
 
 -----------*/
 
+
+
+
+@media only screen and (max-width: 1500px) {
+    .parent {
+    grid-template-columns: repeat(2, 450px);
+    grid-template-rows: repeat(2, 450px);
+    grid-template-rows: 450px;
+    grid-row-gap: 30px;
+}
+    .cover1 { grid-area: 1 / 1 / 2 / 2; }
+    .cover2 { grid-area: 1 / 2 / 2 / 3; }
+    .cover3 { grid-area: 2 / 1 / 3 / 2; }
+    .music {height: 1500px;}
+}
 @media only screen and (max-width: 1000px) {
     
     #menu {display: block;}
@@ -644,6 +660,17 @@ RESPONSIVE
         align-items: center;
         flex-direction: column;
     }
+    
+    .parent {
+    grid-template-columns: 450px;
+    grid-template-rows: repeat(3, 450px);
+    grid-row-gap: 30px;
+
+}
+    .cover1 { grid-area: 1 / 1 / 2 / 2; }
+    .cover2 { grid-area: 2 / 1 / 3 / 2; }
+    .cover3 { grid-area: 3 / 1 / 4 / 2; }
+    .music {height: 1800px;}
 }
 @media only screen and (max-width: 700px) { 
     .tour-tickets ul:first-of-type {display: none;}
@@ -660,7 +687,22 @@ RESPONSIVE
     h2:after {width: 100%;}
     .index-head-text h1{font-size: 40px;}
     .index-head-text a {font-size: 19px;}
+    .parent {
+    grid-template-columns: 300px;
+    grid-template-rows: repeat(3, 300px);
+    grid-row-gap: 30px;
+
+}
+    .music {height: 1300px;}
+    .album-wrap ul li {font-size: 16px; line-height: 20px;}
+    .album a {font-size: 15px;}
+    .album p {font-size: 12px; bottom: 0;}
+    .album {background-size: contain;}
 }
 @media only screen and (max-width: 420px) {
     .tour-tickets {display: none;}
 }
+
+
+
+
