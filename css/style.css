@@ -11,11 +11,16 @@
 body {
     font-family: 'reg';
     color: #fff;
-    font-size: 10px;
 }
 .container {
     height: 100%;
     max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+.container-shop {
+    height: 100%;
+    max-width: 1300px;
     margin: 0 auto;
     padding: 0 50px;
 }
@@ -32,7 +37,7 @@ body {
 nav {
     width: 100%;
     height: 100px;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.9);
     position: fixed;
     z-index: 10000;
 }
@@ -58,7 +63,7 @@ nav {
 .nav-cl ul li a {
     border-bottom: 2px solid rgba(170,170,170, 0);
     text-decoration: none;
-    font-size: 260%;
+    font-size: 26px;
     text-transform: uppercase;
     transition: 0.3s;
     padding-bottom: 5px;
@@ -86,7 +91,38 @@ nav {
     display: none;
     cursor: pointer;
 }
+.phone-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 11111;
+    transition: 0.5s;
+    text-align: center;
+    position: fixed;
+    top: 100px;
+    transform: translateX(-100%);
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.9);
+}
 
+.phone-links a {
+    border-bottom: 1px solid #aaa;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 0 20px 30px 20px;
+    color: #fff;
+    display: block;
+    width: 150px;
+    margin-bottom: 30px;
+}
+.phone-nav .nav-sc ul {
+    width: 170px;
+    margin-bottom: 30px;
+}
+.phone-nav .nav-sc ul li a img {
+    width: 30px;
+}
 /*--------
  PODNASLOVI 
 ---------*/
@@ -94,7 +130,7 @@ nav {
 h2 {
     padding-top: 50px;
     text-align: center;
-    font-size: 350%;
+    font-size: 35px;
     text-transform: uppercase;
 }
 h2:after {
@@ -115,7 +151,7 @@ h2:after {
 --------------*/
 .index-bg {background-image: url("../img/index-header.gif");}
 .band-bg {background-image: url("../img/band-header.jpg"); background-position: right;}
-.shop-bg {background-image: url("../img/shop-header.png");}
+.shop-bg {background-image: url("../img/shop-header.png");background-position: left;}
 
 header {
     height: 100vh;
@@ -142,7 +178,7 @@ header {
     display: inline-block;
     text-decoration: none;
     color: #fff;
-    font-size: 300%;
+    font-size: 30px;
     border: solid 2px #fff;
     border-radius: 300px;
     padding: 15px 20px 10px 20px;
@@ -169,7 +205,7 @@ header {
 }
 .tour-dates ul li, .tour-tickets ul li {
     list-style: none;
-    font-size: 240%;
+    font-size: 24px;
     padding-bottom: 20px;
     letter-spacing: 1px;
 }
@@ -179,6 +215,12 @@ header {
     width: 300px;
 }
 .tour-tickets ul li a {
+    color: #aaa;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.tour-tickets ul li a i {
+    display: none;
     color: #aaa;
     text-decoration: none;
     transition: 0.3s;
@@ -204,7 +246,7 @@ header {
     display: inline-block;
     text-decoration: none;
     color: #fff;
-    font-size: 300%;
+    font-size: 30px;
     border: solid 2px #fff;
     background-color: #1f1521;
     border-radius: 300px;
@@ -222,11 +264,6 @@ header {
 .news {
     padding: 100px 0;
 }
-.news::after {
-    content:'';
-    display: block;
-    clear: both;
-}
 .news-part {
     display: flex;
     justify-content: flex-start;
@@ -238,7 +275,7 @@ header {
 }
 
 .quote {
-    font-size: 250%;
+    font-size: 25px;
     margin-bottom: 20px;
 }
 .quote span.it {
@@ -246,14 +283,14 @@ header {
 }
 .new-text {
     text-align: justify;
-    font-size: 170%;
+    font-size: 17px;
     margin-bottom: 20px;
 }
 .button-news a {
     display: inline-block;
     text-decoration: none;
     color: #fff;
-    font-size: 200%;
+    font-size: 20px;
     border: solid 2px #fff;
     background-color: #1f1521;
     border-radius: 300px;
@@ -288,11 +325,12 @@ header {
 .music {
     height: 100vh;
     width: 100%;
+    position: relative;
 }
 
 .album {
-    width: 450px;
-    height: 450px;
+    width: 100%;
+    height: 100%;
     box-shadow: 15px 15px 10px 0px rgba(0,0,0,0.70);
     cursor: pointer;
     
@@ -325,7 +363,7 @@ header {
     justify-content: space-between;
 }
 .album-wrap ul li {
-    font-size: 200%;
+    font-size: 20px;
     color: #fff;
     line-height: 36px;
     list-style: none;
@@ -335,7 +373,7 @@ header {
     display: inline-block;
     text-decoration: none;
     color: #fff;
-    font-size: 230%;
+    font-size: 23px;
     border: solid 2px #fff;
     border-radius: 300px;
     padding: 15px 20px 10px 20px;
@@ -353,7 +391,7 @@ header {
     background-color: rgba(170, 170, 170, 0);
 }
 .album p {
-    font-size: 150%;
+    font-size: 15px;
     margin-top: 15px;
     position: absolute;
     bottom: 10px;
@@ -417,7 +455,7 @@ header {
 
 .strip .member {
     color: #fff;
-    font-size: 280%;
+    font-size: 28px;
     text-align: center;
     position: absolute;
     top: 50%;
@@ -443,7 +481,6 @@ header {
 
 .member-section {
     background-color: rgba(0, 0, 0, 0.75);
-    height: 700px;
     margin-top: 100px;
 }
 .member-wrap {
@@ -451,14 +488,14 @@ header {
     justify-content: center;
 }
 .member-wrap img {
-    margin: 0 25px;
+    margin: 0 25px 25px;
     display: block;
 }
 .member-wrap ul {
     display: inline-block;
 }
 .member-wrap ul li {
-    font-size: 250%;
+    font-size: 25px;
     line-height: 40px;
     list-style: none;
 }
@@ -476,11 +513,11 @@ header {
 }
 
 .band-wrap {
-    text-align: center;
+    width: 600px;
     margin: 0 auto;
 }
 .band-wrap p {
-    font-size: 200%;
+    font-size: 20px;
     text-align: justify;
     margin-top: 70px;
 }
@@ -491,90 +528,67 @@ header {
     SHOP
 - - - - - - */
 
-.shop1 {
+.shop {
     width: 100%;
-    height: 800px;
-    background-color: rgba(0, 0, 0, 0.50);
-    margin-top: -4px;
-}
-.shop2 {
-    width: 100%;
-    height: 800px;
-    background-color: rgba(0, 0, 0, 0.50);
-}
-.shop3 {
-    width: 100%;
-    height: 750px;
     background-color: rgba(0, 0, 0, 0.50);
 }
 .buttons {
-    transform: translate(-50%, 0);
-    position: absolute;
-    left: 50%;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin: -20px auto 50px auto;
 }
 .color-button {
-    float: left;
     text-transform: uppercase;
-    display: block;
+    display: inline-block;
     text-decoration: none;
     color: #fff;
     text-align: center;
-    width: 200px;
-    margin: 0 auto;
     font-size: 30px;
     border: solid 2px #fff;
     border-radius: 300px;
-    padding: 15px 0 10px 0;
+    padding: 15px 20px 10px 20px;
     transition: 0.3s;
     cursor: pointer;
-    margin: 20px 30px 0 0;
-}
-.color-button:last-child {
-    margin-right: 0;
 }
 .color-button:hover {
     background-color: #aaa;
 }
-
+.shop-row {
+    padding-bottom: 20px;
+}
 .shop-wrap {
-    max-width: 1260px;
-    margin: 150px auto 100px auto;
-}
-.third {
-    margin: 50px auto 70px auto;
-}
-.fourth {
-    margin: 50px auto 70px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .artical {
     width: 280px;
-    float: left;
     text-align: center;
-    margin-right: 40px;
-}
-.last {
-    margin-right: 0;
 }
 .artical p {
-    font-size: 250%;
+    font-size: 25px;
     margin-bottom: 10px;
 }
-.shop-button a {
+.artical a {
+    background-color: rgba(170, 170, 170, 0);
     text-transform: uppercase;
-    display: block;
+    display: inline-block;
     text-decoration: none;
     color: #fff;
     text-align: center;
-    width: 200px;
-    margin: 0 auto;
     font-size: 30px;
     border: solid 2px #fff;
     border-radius: 300px;
-    padding: 15px 0 10px 0;
+    padding: 15px 20px 10px 20px;
     transition: 0.3s;
 }
-.shop-button a:hover {
-    background-color: #aaa;
+.artical a:hover {
+    background-color: rgba(170, 170, 170, 1);
+}
+.shop-button:hover {
+    cursor: default; 
+    background-color: rgba(170, 170, 170, 0);
 }
 /*--------------
      FOOTER
@@ -590,10 +604,10 @@ footer {
 
 footer p {
     padding-top: 30px;
-    font-size: 130%;
+    font-size: 13px;
 }
 .credits {
-    font-size: 110%;
+    font-size: 11px;
     padding-top: 10px;
 }
 
@@ -603,3 +617,98 @@ footer p {
 RESPONSIVE
 
 -----------*/
+
+
+
+
+@media only screen and (max-width: 1500px) {
+    .parent {
+    grid-template-columns: repeat(2, 450px);
+    grid-template-rows: repeat(2, 450px);
+    grid-template-rows: 450px;
+    grid-row-gap: 30px;
+}
+    .cover1 { grid-area: 1 / 1 / 2 / 2; }
+    .cover2 { grid-area: 1 / 2 / 2 / 3; }
+    .cover3 { grid-area: 2 / 1 / 3 / 2; }
+    .music {height: 1500px;}
+}
+
+@media only screen and (max-width: 1300px) {
+    .shop-wrap {flex-direction: column;}
+    .artical {margin-bottom: 30px;}
+    .shop-row {display: flex; align-items: center; flex-direction: column;}
+    .shop-bg {height: 100px;}
+}
+@media only screen and (max-width: 1000px) {
+    
+    #menu {display: block;}
+    .nav-cl {display: none;}
+    .nav-cl {display: none;}
+    .nav-wrap .nav-sc {display: none;}
+    .index-head-text h1{font-size: 70px;}
+    .tour-dates ul li, .tour-tickets ul li {font-size: 20px;}
+    .tour-tickets {width: 230px;}
+    .latest-wrap img {width: 300px;}
+    h2 {font-size: 28px;}
+    h2:after {width: 230px;}
+    .news-part {flex-direction: column; width: 100%;}
+    .news-part img {margin-right: 0; margin-bottom: 30px;}
+    .news-wrap {display: flex; align-items: center; flex-direction: column;}
+    .parent {
+    grid-template-columns: 450px;
+    grid-template-rows: repeat(3, 450px);
+    grid-row-gap: 30px;
+
+}
+    .cover1 { grid-area: 1 / 1 / 2 / 2; }
+    .cover2 { grid-area: 2 / 1 / 3 / 2; }
+    .cover3 { grid-area: 3 / 1 / 4 / 2; }
+    .music {height: 1800px;}
+    .head-btn {left: 50%; top: 50%; font-size: 40px; border: solid 6px #1f1521;}
+    .member-wrap {flex-direction: column; align-items: center;}
+    #member2 .container .member-wrap, #member4 .container .member-wrap {flex-direction: column-reverse;}
+    .member-wrap img {margin: 25px;}
+    .member-wrap ul {margin-bottom: 30px; text-align: center;}
+    .strip {width: 150px; height: 450px;}
+}
+
+@media only screen and (max-width: 700px) { 
+    .tour-tickets ul:first-of-type {display: none;}
+    .tour-tickets {width: 100px;}
+    .tour-dates ul li, .tour-tickets ul li {font-size: 18px;}
+    .news-part img {width: 100%;}
+    .index-head-text h1{font-size: 50px;}
+    .head-btn {font-size: 30px; padding: 20px; border: solid 4px #1f1521;}
+    .band-wrap {width: 100%;}
+    .strip {width: 75px; height: 225px;}
+}
+
+@media only screen and (max-width: 520px) {
+    .tour-tickets {width: 20px;}
+    .tour-tickets ul li a i {display: block; font-size: 22px;}
+    .tour-tickets ul li a:first-of-type {display: none;}
+    .latest-wrap img {width: 100%;}
+    h2:after {width: 100%;}
+    .index-head-text h1{font-size: 40px;}
+    .index-head-text a {font-size: 19px;}
+    .parent {
+    grid-template-columns: 300px;
+    grid-template-rows: repeat(3, 300px);
+    grid-row-gap: 30px;
+
+}
+    
+    .music {height: 1300px;}
+    .album-wrap ul li {font-size: 16px; line-height: 20px;}
+    .album a {font-size: 15px;}
+    .album p {font-size: 12px; bottom: 0;}
+    .album {background-size: contain;}
+    .band-wrap p {font-size: 15px;}
+}
+
+@media only screen and (max-width: 420px) {.tour-tickets {display: none;}}
+
+
+
+

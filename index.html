@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MaerA - Official Site</title>
         <link rel="stylesheet" href="css/style.css">
-        
+        <script src="https://kit.fontawesome.com/1fb1bd60d7.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div class="background">
@@ -16,7 +16,8 @@
                 <nav>
                     <div class="container">
                         <div class="nav-wrap">
-                            <a href="#"><img src="img/logo.png" alt="logo"></a>
+                            <img id="menu" src="img/menu.png" alt="ham">
+                            <a class="logo" href="#"><img src="img/logo.png" alt="logo"></a>
                             <div class="nav-cl">
                                 <ul>
                                     <li><a href="#">home</a></li>
@@ -33,11 +34,27 @@
                                     <li><a href="https://twitter.com/maera_official" target="_blank"><img src="img/social/tw.png" alt="tw"></a></li>
                                     <li><a href="https://soundcloud.com/maeraofficial" target="_blank"><img src="img/social/sc.png" alt="sc"></a></li>
                                 </ul>
-                                <img id="menu" src="img/menu.png" alt="ham">
                             </div>
                         </div>
                     </div>
                 </nav>
+                <div class="phone-nav">
+                    <div class="phone-links">
+                        <a href="#">home</a>
+                        <a href="music.html">music</a>
+                        <a href="about.html">about</a>
+                        <a href="shop.html">shop</a>
+                    </div>
+                    <div class="nav-sc">
+                                <ul>
+                                    <li><a href="https://www.facebook.com/maeraband/" target="_blank"><img src="img/social/fb.png" alt="fb"></a></li>
+                                    <li><a href="https://www.instagram.com/maera_official/?hl=en" target="_blank"><img src="img/social/ig.png" alt="ig"></a></li>
+                                    <li><a href="https://www.youtube.com/channel/UC8KdTJOwwdPZwhDor-vOphw" target="_blank"><img src="img/social/yt.png" alt="yt"></a></li>
+                                    <li><a href="https://twitter.com/maera_official" target="_blank"><img src="img/social/tw.png" alt="tw"></a></li>
+                                    <li><a href="https://soundcloud.com/maeraofficial" target="_blank"><img src="img/social/sc.png" alt="sc"></a></li>
+                                </ul>
+                            </div>
+                </div>
                 
                 <div class="index-head-text">
                     <h1>new live video!</h1>
@@ -57,13 +74,13 @@
                             <li>23 MAR 2019 GARAZA</li>
                             <li>25 MAR 2019 KLUB FEST</li>
                             <li>27 MAR 2019 ELKTROPIONIR</li>
-                            <li>29 MAR 2019 DOM OMLADINE BEOGRAD</li>
+                            <li>29 MAR 2019 DOM OMLADINE BG</li>
                             <li>31 MAR 2019 GRIZLI</li>
-                            <li>2 APR 2019 DOM OMLADINE KRAGUJEVAC</li>
+                            <li>2 APR 2019 DOM OMLADINE KG</li>
                             <li>4 APR 2019 BLACK STAGE</li>
                             <li>7 APR 2019 CK13</li>
                             <li>9 APR 2019 MITRALJEZ</li>
-                            <li>10 APR 2019 DOM OMLADINE PANCEVO</li>
+                            <li>10 APR 2019 APOLO</li>
                         </ul>
                     </div>
                     <div class="tour-tickets">
@@ -81,16 +98,16 @@
                         </ul>
 
                         <ul>
-                            <li><a href="#">TICKETS</a></li>
-                            <li><a href="#">TICKETS</a></li>
-                            <li><a href="#">TICKETS</a></li>
-                            <li><a href="#">TICKETS</a></li>
-                            <li><a href="#">TICKETS</a></li>
-                            <li><a href="#">TICKETS</a></li>
-                            <li><a href="#">TICKETS</a></li>
-                            <li><a href="#">TICKETS</a></li>
-                            <li><a href="#">TICKETS</a></li>
-                            <li><a href="#">TICKETS</a></li>
+                            <li><a href="#">TICKETS</a><a href="#"><i class="fas fa-ticket-alt fa-rotate-90"></i></a></li>
+                            <li><a href="#">TICKETS</a><a href="#"><i class="fas fa-ticket-alt fa-rotate-90"></i></a></li>
+                            <li><a href="#">TICKETS</a><a href="#"><i class="fas fa-ticket-alt fa-rotate-90"></i></a></li>
+                            <li><a href="#">TICKETS</a><a href="#"><i class="fas fa-ticket-alt fa-rotate-90"></i></a></li>
+                            <li><a href="#">TICKETS</a><a href="#"><i class="fas fa-ticket-alt fa-rotate-90"></i></a></li>
+                            <li><a href="#">TICKETS</a><a href="#"><i class="fas fa-ticket-alt fa-rotate-90"></i></a></li>
+                            <li><a href="#">TICKETS</a><a href="#"><i class="fas fa-ticket-alt fa-rotate-90"></i></a></li>
+                            <li><a href="#">TICKETS</a><a href="#"><i class="fas fa-ticket-alt fa-rotate-90"></i></a></li>
+                            <li><a href="#">TICKETS</a><a href="#"><i class="fas fa-ticket-alt fa-rotate-90"></i></a></li>
+                            <li><a href="#">TICKETS</a><a href="#"><i class="fas fa-ticket-alt fa-rotate-90"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -155,12 +172,14 @@
      <!-- FOOTER -->
     
         <footer>
-            <p>&copy; 2019 MaerA - All Rights Reserved.</p>
-            <p class="credits">Website design: Vladan Markovic,
-            The Hound and "Echo the Howl" cover art: Mihailo Matovic, 
-            "Purgatory" cover art: Vukan Kuzman</p>    
+            <div class="container">
+                <p>&copy; 2019 MaerA - All Rights Reserved.</p>
+                <p class="credits">Website design: Vladan Markovic,
+                The Hound and "Echo the Howl" cover art: Mihailo Matovic, 
+                "Purgatory" cover art: Vukan Kuzman</p>
+            </div>
         </footer> 
     
-    <script src="script/drop.js"></script>
+    <script src="script/slideMenu.js"></script>
     </body>
 </html>
