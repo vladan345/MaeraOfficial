@@ -93,6 +93,7 @@ nav {
     cursor: pointer;
 }
 .phone-nav {
+    z-index: 11111;
     transition: 0.5s;
     text-align: center;
     position: fixed;
