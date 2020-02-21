@@ -7,6 +7,20 @@ var set2 = document.getElementsByClassName("album-set")[1];
 var set3 = document.getElementsByClassName("album-set")[2];
 document.addEventListener("click", klik, false);
 
+var images = new Array()
+			function preload() {
+				for (i = 0; i < preload.arguments.length; i++) {
+					images[i] = new Image()
+					images[i].src = preload.arguments[i]
+				}
+			}
+			preload(
+				"img/music-img/cover1.jpg",
+                "img/music-img/cover2.jpg",
+                "img/music-img/cover3.jpg",
+                "img/tom.jpg"
+			);
+
 function klik(evObj) {
     var background = document.getElementsByClassName("background")[0];
     switch (evObj.target) {
